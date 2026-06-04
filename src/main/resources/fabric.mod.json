@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "id": "staff.helepr",
+  "id": "staffhelper",
   "version": "${version}",
   "name": "Staff Helper",
   "description": "Быстрый бан и мут через GUI для варпатйма ",
