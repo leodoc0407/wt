@@ -1,38 +1,19 @@
 {
-	"schemaVersion": 1,
-	"id": "template-mod",
-	"version": "${version}",
-	"name": "Template Mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "CC0-1.0",
-	"icon": "assets/template-mod/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"staff.helepr.TemplateMod"
-		],
-		"client": [
-			"staff.helepr.client.TemplateModClient"
-		]
-	},
-	"mixins": [
-		"template-mod.mixins.json",
-		{
-			"config": "template-mod.client.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.19.3",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "staff.helepr",
+  "version": "${version}",
+  "name": "Staff Helper",
+  "description": "Быстрый бан и мут через GUI для варпатйма ",
+  "authors": ["plastfps"],
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["staff.helepr.AdminToolsMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "minecraft": "~1.21.4",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
